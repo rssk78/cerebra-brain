@@ -1,9 +1,12 @@
-# Health Benefits of Cerebra Brain
-
-## Comprehensive Overview
+export default function Benefits() {
+  return (
+    <div>
+      <h1>Health Benefits of Cerebra Brain</h1>
+      <h2>Comprehensive Overview</h2>
+      <p>
 Cerebra Brain offers a plethora of health benefits, supported by scientific research and testimonials from users. Here’s an in-depth look into how Cerebra Brain can improve mental well-being and cognitive functions.
-
-### 1. Cognitive Enhancement
+      </p>
+    ### 1. Cognitive Enhancement
 Scientific studies suggest that the components in Cerebra Brain can enhance cognitive functions such as memory, attention, and problem-solving abilities. Research indicates a significant improvement in cognitive performance among users.
 
 ### 2. Stress Reduction
@@ -22,3 +25,9 @@ Research has shown that Cerebra Brain can aid in achieving mental clarity. Users
 
 ## Conclusion
 Cerebra Brain is not just a supplement; it’s a comprehensive solution for enhancing mental health backed by scientific evidence and real-life testimonials. Experience these benefits for yourself and unlock your potential!
+    </div>
+  );
+}
+
+
+
