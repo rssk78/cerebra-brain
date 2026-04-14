@@ -1,15 +1,28 @@
 import Link from "next/link";
-import "./global.css";
 
 export default function Home() {
   return (
-    <main>
-      <header>
+    <main className="container">
+      {/* HERO */}
+      <header className="hero">
         <h1>Welcome to Cerebra Brain</h1>
-        <p>Your ultimate solution for enhanced focus and mental clarity.</p>
+        <p className="subtitle">
+          Your ultimate solution for enhanced focus and mental clarity.
+        </p>
+
+        <div className="cta-buttons">
+          <Link href="/order" className="btn primary">
+            Order Now
+          </Link>
+
+          <Link href="/learn-more" className="btn secondary">
+            Learn More
+          </Link>
+        </div>
       </header>
 
-      <section id="overview">
+      {/* OVERVIEW */}
+      <section className="card">
         <h2>Overview</h2>
         <p>
           Cerebra Brain is a unique cognitive supplement designed to boost brain
@@ -19,7 +32,8 @@ export default function Home() {
         </p>
       </section>
 
-      <section id="key-benefits">
+      {/* BENEFITS */}
+      <section className="card">
         <h2>Key Benefits</h2>
         <ul>
           <li>Improves focus and concentration</li>
@@ -29,21 +43,23 @@ export default function Home() {
         </ul>
       </section>
 
-      <section id="ingredients-summary">
+      {/* INGREDIENTS */}
+      <section className="card">
         <h2>Ingredients Summary</h2>
-        <p>
-          Cerebra Brain is formulated with a powerful blend of:
-          <br />- Ginkgo Biloba
-          <br />- Bacopa Monnieri
-          <br />- Rhodiola Rosea
-          <br />- Omega-3 Fatty Acids
-          <br />
+        <ul>
+          <li>Ginkgo Biloba</li>
+          <li>Bacopa Monnieri</li>
+          <li>Rhodiola Rosea</li>
+          <li>Omega-3 Fatty Acids</li>
+        </ul>
+        <p className="note">
           These ingredients are known for their cognitive enhancing properties
           and overall health benefits.
         </p>
       </section>
 
-      <section id="usage-instructions">
+      {/* USAGE */}
+      <section className="card">
         <h2>Usage Instructions</h2>
         <p>
           Take two capsules daily with a meal. For best results, use consistently
@@ -51,19 +67,8 @@ export default function Home() {
         </p>
       </section>
 
-      <section id="calls-to-action">
-        <h2>Ready to Boost Your Brain Power?</h2>
-
-        <Link href="/order">
-          <button>Order Now</button>
-        </Link>
-
-        <Link href="/learn-more">
-          <button>Learn More</button>
-        </Link>
-      </section>
-
-      <footer>
+      {/* FOOTER */}
+      <footer className="footer">
         <p>&copy; 2026 Cerebra Brain. All rights reserved.</p>
       </footer>
     </main>
