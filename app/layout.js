@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css'; // Assuming you have a styles.css for custom styles
+import './global.css'; // Assuming you have a global.css for custom styles
 
 const Layout = ({ children }) => {
     return (
