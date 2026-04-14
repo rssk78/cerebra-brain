@@ -4,6 +4,9 @@ import Link from "next/link";
 export const metadata = {
   title: "Cerebra Brain",
   description: "Cerebra Brain - Your resource for cognitive neuroscience.",
+  verification: {
+    google: "_C4Iz2IpJw0hLgfxbd2pHGhTUe2KLqDEzhINROt2PNQ",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -25,6 +28,10 @@ export default function RootLayout({ children }) {
         </header>
 
         <main>{children}</main>
+      </body>
+    </html>
+  );
+}
 
         <footer className="footer">
           <p>&copy; 2026 Cerebra Brain</p>
