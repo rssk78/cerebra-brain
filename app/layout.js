@@ -1,29 +1,35 @@
-import React from 'react';
-import './global.css'; // Assuming you have a global.css for custom styles
+import "./global.css";
+import Link from "next/link";
 
-const Layout = ({ children }) => {
-    return (
-        <div>
-            <head>
-                <title>Cerebra Brain</title>
-                <meta name="description" content="Cerebra Brain - Your resource for cognitive neuroscience." />
-            </head>
-            <header>
-                <nav>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main>{children}</main>
-            <footer>
-                <p>&copy; 2026 Cerebra Brain</p>
-            </footer>
-        </div>
-    );
+export const metadata = {
+  title: "Cerebra Brain",
+  description: "Cerebra Brain - Your resource for cognitive neuroscience.",
 };
 
-export default Layout;
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>
+        <header>
+          <nav>
+            <ul className="nav">
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/benefits">Benefits</Link></li>
+              <li><Link href="/ingredients">Ingredients</Link></li>
+              <li><Link href="/faq">FAQ</Link></li>
+              <li><Link href="/how-to-use">How To Use</Link></li>
+              <li><Link href="/dosage">Dosage</Link></li>
+              <li><Link href="/side-effects">Safety</Link></li>
+            </ul>
+          </nav>
+        </header>
+
+        <main>{children}</main>
+
+        <footer className="footer">
+          <p>&copy; 2026 Cerebra Brain</p>
+        </footer>
+      </body>
+    </html>
+  );
+}
